@@ -89,7 +89,7 @@ body {
 #introPhoto {
     height: max(200px, 20vw + 10vh);
     max-width: 100%;
-    background-image: url('intro.JPG');
+    background-image: url('./intro.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
