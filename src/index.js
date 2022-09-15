@@ -6,4 +6,14 @@ import './style.css';
 
 pageLoad();
 showOverview();
+
+const overviewTab = document.querySelector('#overview');
+overviewTab.addEventListener("click", showOverview);
+
+const menuTab = document.querySelector('#menu');
+menuTab.addEventListener("click", showMenu);
+
+const contactTab = document.querySelector('#contact');
+contactTab.addEventListener("click", showContact);
+
 console.log("Hello");
