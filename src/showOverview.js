@@ -1,9 +1,15 @@
 export default function showOverview() {
 
+    const currentLabel = document.querySelector('.on');
+    if (currentLabel) {
+        currentLabel.classList.remove('on');
+    }
+
     const label = document.querySelector('#overview');
     label.classList.add('on');
 
     const page = document.querySelector('.page');
+    page.textContent = "";
 
     const introBlock = document.createElement("div");
     introBlock.classList.add('block');
