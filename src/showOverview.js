@@ -18,6 +18,7 @@ export default function showOverview() {
     introTitle.textContent = "Intro";
     introBlock.appendChild(introTitle);
     const introPhoto = document.createElement("div");
+    introPhoto.classList.add('photo');
     introPhoto.id = "introPhoto";
     introBlock.appendChild(introPhoto);
     const introText = document.createElement("div");
@@ -34,7 +35,9 @@ export default function showOverview() {
     hoursBlock.appendChild(hoursTitle);
     const hoursText = document.createElement("div");
     hoursText.classList.add('text');
-    hoursText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    hoursText.classList.add('center');
+    hoursText.textContent = "Monday to Friday: 8am - 10pm";
+    hoursText.textContent += "\nSaturday and Sunday: 9am - 11pm";
     hoursBlock.appendChild(hoursText);
     page.appendChild(hoursBlock);
 
@@ -44,9 +47,13 @@ export default function showOverview() {
     locationTitle.classList.add('title');
     locationTitle.textContent = "Location";
     locationBlock.appendChild(locationTitle);
+    const locationPhoto = document.createElement("div");
+    locationPhoto.classList.add('photo');
+    locationPhoto.id = "locationPhoto";
+    locationBlock.appendChild(locationPhoto);
     const locationText = document.createElement("div");
     locationText.classList.add('text');
-    locationText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    locationText.textContent = "1/F, 1-2-3 Roppongi, Minato city, Tokyo 123-0000";
     locationBlock.appendChild(locationText);
     page.appendChild(locationBlock);
 

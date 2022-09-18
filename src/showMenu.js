@@ -17,9 +17,13 @@ export default function showMenu() {
     breakfastTitle.classList.add('title');
     breakfastTitle.textContent = "Breakfast";
     breakfastBlock.appendChild(breakfastTitle);
+    const breakfastPhoto = document.createElement("div");
+    breakfastPhoto.classList.add('photo');
+    breakfastPhoto.id = "breakfastPhoto";
+    breakfastBlock.appendChild(breakfastPhoto);
     const breakfastText = document.createElement("div");
     breakfastText.classList.add('text');
-    breakfastText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    breakfastText.textContent = "Sandwitch + French fries + 1 drink, $10";
     breakfastBlock.appendChild(breakfastText);
     page.appendChild(breakfastBlock);
 
@@ -29,9 +33,13 @@ export default function showMenu() {
     lunchTitle.classList.add('title');
     lunchTitle.textContent = "Lunch";
     lunchBlock.appendChild(lunchTitle);
+    const lunchPhoto = document.createElement("div");
+    lunchPhoto.classList.add('photo');
+    lunchPhoto.id = "lunchPhoto";
+    lunchBlock.appendChild(lunchPhoto);
     const lunchText = document.createElement("div");
     lunchText.classList.add('text');
-    lunchText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    lunchText.textContent = "Soup + Salad + Doria + Grilled beef + Rice + 1 drink, $10";
     lunchBlock.appendChild(lunchText);
     page.appendChild(lunchBlock);
 
@@ -41,9 +49,13 @@ export default function showMenu() {
     dinnerTitle.classList.add('title');
     dinnerTitle.textContent = "Dinner";
     dinnerBlock.appendChild(dinnerTitle);
+    const dinnerPhoto = document.createElement("div");
+    dinnerPhoto.classList.add('photo');
+    dinnerPhoto.id = "dinnerPhoto";
+    dinnerBlock.appendChild(dinnerPhoto);
     const dinnerText = document.createElement("div");
     dinnerText.classList.add('text');
-    dinnerText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    dinnerText.textContent = "Japanese style set meal + 1 drink, $30";
     dinnerBlock.appendChild(dinnerText);
     page.appendChild(dinnerBlock);
 
