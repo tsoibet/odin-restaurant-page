@@ -38,6 +38,6 @@ export default function pageLoad() {
 
     const footer = document.createElement("div");
     footer.classList.add('footer');
-    footer.textContent = "Nora Restaurant";
+    footer.textContent = "Created by Betsy @ Odin Project 2022";
     content.appendChild(footer);
 }
